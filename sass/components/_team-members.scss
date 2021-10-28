@@ -1,0 +1,121 @@
+/*Team Members */
+.team__name {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+}
+.team__member {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-right: 0;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+}
+
+.team__image {
+  @media screen and (max-width: 767px) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.team__social-contacts {
+  margin-top: 16px;
+}
+
+.team__item,
+.join__social-icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.team__social-link {
+  color: $primaryTextColor;
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: $secondaryColor;
+    background-color: $accentColor;
+  }
+}
+.team__social-icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .team__social-link:hover & {
+    fill: currentColor;
+  }
+}
+.team__header,
+.clients__header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $mainColor;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+.team__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $mainColor;
+  margin-bottom: 10px;
+}
+.team__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+.team__description {
+  padding: 30px 0;
+}
+.team {
+  background-color: $thirdColor;
+}

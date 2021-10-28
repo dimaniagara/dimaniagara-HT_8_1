@@ -1,0 +1,208 @@
+/* footer */
+footer {
+  padding: 60px 0;
+  background-color: #2f303a;
+}
+.footer__blocks {
+  display: flex;
+  align-items: flex-start;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.footer__item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+.footer__item:not(:last-child) {
+  margin-right: 70px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+  }
+}
+.footer__logo {
+  text-decoration: none;
+  font-family: "Raleway", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: $accentColor;
+  display: block;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0 auto;
+  }
+}
+.footer__logo--secondaryColor {
+  color: $secondaryColor;
+}
+.join__title,
+.subscription__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $secondaryColor;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+}
+.join__list {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
+}
+.join__link {
+  color: $thirdColor;
+  background: rgba(255, 255, 255, 0.1);
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $accentColor;
+  }
+}
+.join__social-icon {
+  fill: $secondaryColor;
+}
+.address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $primaryTextColor;
+  margin-bottom: 0;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+.address__item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    text-align: center;
+  }
+}
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address__location {
+  text-decoration: none;
+  color: $secondaryColor;
+}
+.address__info {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $primaryTextColor;
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
+}
+.subscription {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 100%;
+  }
+}
+.subscription__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $secondaryColor;
+  background: $accentColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 29px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: #188ce8;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0 auto;
+  }
+}
+.subscription__label {
+  padding-right: 10px;
+}
+.subscription__icon {
+  fill: $secondaryColor;
+}
+.subscription__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.subscription__email {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 15px 15px;
+  width: 358px;
+  margin-right: 12px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

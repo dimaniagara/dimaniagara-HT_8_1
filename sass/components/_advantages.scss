@@ -1,0 +1,87 @@
+/*Advantages */
+.advantages {
+  padding-bottom: 0;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
+}
+.advantages__title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $mainColor;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+.advantages__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}
+.advantages__item:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages__item:nth-child(even) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 0;
+  }
+}
+.advantages__item:last-child {
+  padding-right: 0;
+}
+.advantages__menu-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+}
+.advantages__menu-list .advantages__item {
+  width: 270px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
+}
+.advantages__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $thirdColor;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
+}
+.advantages__item:nth-child(3) .advantages__text,
+.advantages__item:nth-child(4) .advantages__text {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

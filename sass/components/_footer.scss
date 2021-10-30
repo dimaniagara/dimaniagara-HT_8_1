@@ -14,12 +14,15 @@ footer {
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 .footer__item {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     text-align: center;
+    &:first-child {
+      margin-left: 60px;
+    }
   }
 }
 .footer__item:not(:last-child) {
@@ -97,6 +100,7 @@ footer {
   letter-spacing: 0.03em;
   color: $primaryTextColor;
   margin-bottom: 0;
+  margin-top: 20px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     text-align: center;
@@ -121,13 +125,14 @@ footer {
   text-decoration: none;
   color: $primaryTextColor;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     justify-content: center;
   }
 }
 .subscription {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 100%;
+    margin-top: 60px;
   }
 }
 .subscription__button {
@@ -194,7 +199,7 @@ footer {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: block;
     width: 450px;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 
   &::placeholder {

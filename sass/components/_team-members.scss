@@ -33,11 +33,17 @@
     &:nth-child(even) {
       margin-right: 0;
     }
+    &:nth-child(1) {
+      margin-bottom: 30px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 30px;
+    }
   }
 }
 
 .team__image {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: block;
     width: 100%;
   }

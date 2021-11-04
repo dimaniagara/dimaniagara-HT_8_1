@@ -2,24 +2,7 @@
 .page-header {
   border-bottom: 1px solid #ececec;
   background-color: $secondaryColor;
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-.page-header__logo {
-  text-decoration: none;
-  font-family: "Raleway", Arial, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: $mainColor;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    font-size: 24px;
-    line-height: 1.16;
-  }
+  position: relative;
 }
 
 /* Main Navigation */
@@ -42,8 +25,12 @@
   display: flex;
   margin-left: 93px;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 80px;
+    margin-left: 75px;
   }
 }
 .site-nav__item:not(:last-child) {
@@ -101,10 +88,15 @@
 .list {
   display: flex;
   margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-left: 80px;
+    margin-left: 75px;
   }
 }
 .contacts__link {

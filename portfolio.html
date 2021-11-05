@@ -29,6 +29,15 @@
           <a href="./index.html" class="page-header__logo"
             ><span class="page-header__logo--accent-color">Web</span>Studio</a
           >
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu__open" width="40px" height="40px">
+              <use href="./images/svg-sprite.svg#icon-menu-open"></use>
+            </svg>
+          </button>
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Студия</a>
@@ -100,6 +109,7 @@
               <a href="#" class="options__link">
                 <div class="options__thumb">
                   <img
+                    srcset="./images/pic8.jpg 1x, ./images/pic8@2x.jpg 2x"
                     src="./images/pic8.jpg"
                     alt="Экран"
                     width="370"
@@ -126,6 +136,7 @@
               <a href="#" class="options__link">
                 <div class="options__thumb">
                   <img
+                    srcset="./images/pic9.jpg 1x, ./images/pic9@2x.jpg 2x"
                     src="./images/pic9.jpg"
                     alt="Баскетбол"
                     width="370"
@@ -154,6 +165,7 @@
               <a href="#" class="options__link">
                 <div class="options__thumb">
                   <img
+                    srcset="./images/pic10.jpg 1x, ./images/pic10@2x.jpg 2x"
                     src="./images/pic10.jpg"
                     class="options__img"
                     alt="Рыба"
@@ -180,6 +192,7 @@
               <a href="#" class="options__link">
                 <div class="options__thumb">
                   <img
+                    srcset="./images/pic11.jpg 1x, ./images/pic11@2x.jpg 2x"
                     src="./images/pic11.jpg"
                     class="options__img"
                     alt="Наушники"
@@ -206,6 +219,7 @@
               <a href="#" class="options__link">
                 <div class="options__thumb">
                   <img
+                    srcset="./images/pic12.jpg 1x, ./images/pic12@2x.jpg 2x"
                     src="./images/pic12.jpg"
                     class="options__img"
                     alt="Коробки"
@@ -232,6 +246,7 @@
               <a href="#" class="options__link">
                 <div class="options__thumb">
                   <img
+                    srcset="./images/pic13.jpg 1x, ./images/pic13@2x.jpg 2x"
                     src="./images/pic13.jpg"
                     class="options__img"
                     alt="Монитор"
@@ -258,6 +273,7 @@
               <a href="#" class="options__link">
                 <div class="options__thumb">
                   <img
+                    srcset="./images/pic14.jpg 1x, ./images/pic14@2x.jpg 2x"
                     src="./images/pic14.jpg"
                     class="options__img"
                     alt="Книга"
@@ -284,6 +300,7 @@
               <a href="#" class="options__link">
                 <div class="options__thumb">
                   <img
+                    srcset="./images/pic15.jpg 1x, ./images/pic15@2x.jpg 2x"
                     src="./images/pic15.jpg"
                     class="options__img"
                     alt="Бирка"
@@ -310,6 +327,7 @@
               <a href="#" class="options__link">
                 <div class="options__thumb">
                   <img
+                    srcset="./images/pic16.jpg 1x, ./images/pic16@2x.jpg 2x"
                     src="./images/pic16.jpg"
                     class="options__img"
                     alt="Ноутбук"
@@ -429,5 +447,63 @@
         </ul>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu__close" width="40px" height="40px">
+          <use href="./images/svg-sprite.svg#icon-close_menu"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-container">
+        <div class="mobile-wrapper">
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-wrapper">
+          <ul class="mobile-contacts">
+            <li class="mobile-contacts__item">
+              <a href="tel:+380961111111" class="mobile-contacts__link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-contacts__item">
+              <a href="mailto:info@devstudio.com" class="mobile-contacts__link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social">
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

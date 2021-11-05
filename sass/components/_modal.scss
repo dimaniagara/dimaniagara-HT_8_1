@@ -34,6 +34,9 @@
     top: 93px;
     transform: translateX(-50%) scale(1);
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
 }
 .modal__close {
   display: flex;
@@ -129,6 +132,13 @@
   letter-spacing: 0.03em;
   color: $primaryTextColor;
   margin-top: 20px;
+
+  @media screen and (max-width: 1199px) {
+    display: block;
+    font-size: 12px;
+    line-height: 1.16;
+    padding-left: 24px;
+  }
 }
 .modal__checkbox {
   -webkit-appearance: none;
@@ -143,6 +153,10 @@
   position: absolute;
   top: 5px;
   left: 12px;
+
+  @media screen and (max-width: 1199px) {
+    left: 0;
+  }
 }
 .modal__privacy-policy {
   color: $accentColor;

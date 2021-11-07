@@ -30,7 +30,8 @@
   padding: 40px;
 
   @media screen and (max-width: 767px) {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     top: 93px;
     transform: translateX(-50%) scale(1);
   }
@@ -156,10 +157,12 @@
 
   @media screen and (max-width: 1199px) {
     left: 0;
+    top: 0;
   }
 }
 .modal__privacy-policy {
   color: $accentColor;
+  padding-left: 5px;
 }
 .modal__checkbox:checked + .modal__checkbox-icon {
   background-color: $accentColor;
